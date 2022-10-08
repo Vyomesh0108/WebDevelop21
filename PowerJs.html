@@ -1,0 +1,41 @@
+<!-- Write a program to find power using javascript? -->
+
+<html>
+    <head>
+        <script>
+
+            function power()
+            {
+                var no1 = f1.n1.value;
+                var no2 = f1.n2.value;
+                var c = 1;
+
+                while(no2 >= 1)
+                {
+                    c = c * parseInt(no1);
+                    no2--;
+                }
+                f1.n3.value = c;
+
+                var e = document.getElementById("abc");
+                e.innerHTML = "POWER = "+c;
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <form name="f1">
+            Enter No1 : <input type="text" name="n1"><br>
+            Enter No2 : <input type="text" name="n2"><br><br>
+
+            ANS : <input type="text" name="n3"><br><br>
+
+            <input type="button" name="b1" value="Power" onclick="power()">
+        </form>
+
+        <br><br>
+
+        <div id = "abc"></div>
+    </body>
+</html>

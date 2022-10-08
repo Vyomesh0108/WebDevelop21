@@ -1,0 +1,30 @@
+<!-- Write a program to reverse string using javascript? -->
+
+<html>
+    <head>
+        <script>
+            
+            function revstr()
+            {
+                var str = f1.t1.value;
+                var rev = " ";
+
+                for(var i = str.length-1; i>=0; i--)
+                {
+                    rev = rev + str[i];
+                }
+                f1.t2.value = rev;
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <form name="f1">
+            Enter String : <input type="text" name="t1" onblur="revstr()"> <br><br>
+
+            ANS : <input type="text" name="t2">
+        </form>
+
+    </body>
+</html>

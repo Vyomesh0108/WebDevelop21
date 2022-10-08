@@ -1,0 +1,25 @@
+<!-- Write a program to catch me using javascript? -->
+
+<html>
+    <head>
+        <script>
+
+            function change()
+            {
+                var e = document.getElementById("abc");
+
+                var l = Math.floor(Math.random()*1000);
+                var t = Math.floor(Math.random()*600);
+
+                e.style.left = l;
+                e.style.top = t;
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <input type="button" style="position: absolute; top: 100; left: 100;" name="b1" id="abc" value="catch me" onmouseover="change()">
+
+    </body>
+</html>

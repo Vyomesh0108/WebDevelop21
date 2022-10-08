@@ -1,0 +1,30 @@
+<!-- Write a javascript program to check user has press left click or right click of mouse? -->
+
+<html>
+    <head>
+        <script>
+
+            function check(a)
+            {
+                var e = document.getElementById("abc");
+
+                if(a == 0)
+                {
+                    e.innerHTML = "Left Click";
+                }
+                else
+                {
+                    e.innerHTML = "Right Click";
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <!-- onmousedown -> to detect left click or right click of mouse -->
+        <div onmousedown="check(event.button)"> Click Here </div> <br><br>
+
+        <div id = "abc"> Check Here </div>
+    </body>
+</html>

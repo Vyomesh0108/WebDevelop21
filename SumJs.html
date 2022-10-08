@@ -1,0 +1,28 @@
+<!-- Write a program to enter 2 numbers & print sum? -->
+
+<html>
+    <head>
+        <script>
+
+            function addMe()
+            {
+                var no1 = f1.n1.value;
+                var no2 = f1.n2.value;
+                var c = parseInt(no1) + parseInt(no2);
+
+                document.write("<br> ADD = "+c);
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <form name="f1">
+            Enter No1 : <input type="text" name="n1"> <br>
+            Enter No2 : <input type="text" name="n2"> <br><br>
+
+            <input type="button" name="b1" value="ADD" onclick="addMe()">
+        </form>
+
+    </body>
+</html>

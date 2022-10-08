@@ -1,0 +1,25 @@
+<!-- Write a javascript program to evaluate the expression? -->
+
+<html>
+    <head>
+        <script>
+
+            function myeval()
+            {
+                var exp = f1.t1.value;
+                f1.t2.value = eval(exp);
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <form name="f1">
+            <!-- onblur -> gives output, after leaving textfield by tab -->
+            Enter Expression : <input type="text" name="t1" onblur="myeval()"><br><br>
+
+            ANS : <input type="text" name="t2">
+        </form>
+
+    </body>
+</html>
