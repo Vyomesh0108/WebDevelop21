@@ -1,0 +1,40 @@
+<!-- Write a javascript program to print digit clock? -->
+
+<html>
+    <head>
+
+        <h1  align="center"> <font id="abc" color="red"> DATE & TIME </font></h1>
+
+        <script>
+
+            function myclock()
+            {
+                var d = new Date();
+
+                var dd = d.getDate();
+                var mm = d.getMonth();
+                mm++;
+                var yy = d.getFullYear();
+
+                var hr = d.getHours();
+                var mn = d.getMinutes();
+                var ss = d.getSeconds();
+                var ms = d.getMilliseconds();
+
+                var e = document.getElementById("abc");
+                e.innerHTML = "DATE : "+dd+"/"+mm+"/"+yy+"  TIME : "+hr+":"+mn+":"+ss+":"+ms;
+                
+                setTimeout("myclock()",1000);
+                window.statusbar ="DATE : "+dd+"/"+mm+"/"+yy+"  TIME : "+hr+":"+mn+":"+ss+":"+ms;
+            }
+
+            myclock();
+
+        </script>
+
+    </head>
+    <body>
+
+
+    </body>
+</html>
