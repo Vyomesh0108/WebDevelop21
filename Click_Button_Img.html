@@ -1,0 +1,27 @@
+<!-- Write a javascript program to change image as per button clicked? -->
+
+<html>
+    <head>
+        <script>
+
+            var img = document.createElement("img");
+
+            function picture(src, width, height)
+            {
+                img.src = src;
+                img.width = width;
+                img.height = height;
+
+                document.body.appendChild(img);
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <input type="button" name="b1" value="Elephant" onclick="picture('elephant.jpg',300, 300)" style="position: fixed; margin-top: 500; margin-left: 200;">
+        
+        <input type="button" name="b2" value="Dog" onclick="picture('Dog.jpg',300, 300)" style="position: fixed; margin-top: 500; margin-left: 650;">
+
+    </body>
+</html>
