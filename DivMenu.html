@@ -1,0 +1,54 @@
+<html>
+    <head>
+
+        <style>
+
+            .mydesign
+            {
+                color: white;
+                font-size: 20pt;
+                cursor: hand;
+                padding-left: 10px;
+                text-decoration: underline;
+            }
+
+        </style>
+
+        <script>
+
+            function show(fna)
+            {
+                var e = document.getElementById("abc");
+
+                e.innerHTML = "<object type='text/html' data="+fna+" width=1000 height=500>";
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <div style="position: absolute; left: 0; top: 0; width: 1600; height: 100; background-color: grey;">
+
+        </div>
+
+        <div style="position: absolute; left: 0; top: 100; width: 210; height: 600; background-color: orange;">
+
+            <div class="mydesign">
+
+                <div onclick="show('First.html');"> First </div>
+                <div onclick="show('Myform.html');"> Form </div>
+                <div onclick="show('Div_span.p.html');"> Div </div>
+                <div onclick="show('Banner.html');"> Banner </div>
+                <div onclick="show('CatchMe.html');"> CatchMe </div>
+                <div onclick="show('MyClock.html');"> MyClock </div>
+                <div onclick="show('TableColor.html');"> TableColor </div>
+                <div onclick="show('PowerJs.html');"> Power </div>
+
+            </div>
+
+        </div>
+
+        <div id="abc" style="position: absolute; left: 210; top: 100; width: 1380; height: 600; background-color: whitesmoke;"></div>
+
+    </body>
+</html>

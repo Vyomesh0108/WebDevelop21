@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+        <script>
+
+            function OpenWin()
+            {
+                win = window.open(f1.t1.value);
+            }
+
+            function CloseWin()
+            {
+                win = window.close();
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+        <form name="f1">
+
+            Enter Filename : <input type="url" name="t1"><br><br>
+
+            <input type="button" name="b1" value="Open Window" onclick="OpenWin()">
+
+            <input type="button" name="b2" value="Close Window" onclick="CloseWin()">
+            
+        </form>
+    </body>
+</html>
