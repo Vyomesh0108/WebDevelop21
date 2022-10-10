@@ -1,0 +1,31 @@
+<!-- Write a javascript program to change image as mouse move on button? -->
+
+<html>
+    <head>
+        <script>
+
+            var img = document.createElement("img");
+
+            function display_image(src, width, height)
+            {
+                img.src = src;
+                img.width = width;
+                img.height = height;
+
+                document.body.appendChild(img);
+            }
+
+            function remove_image()
+            {
+                document.body.removeChild(img);
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <input type="button" name="b1" value="Elephant" style="position: fixed; margin-top: 500; margin-left: 200;" onmouseover="display_image('elephant.jpg', 300, 300)" onmouseout="remove_image()">
+        <input type="button" name="b2" value="Dog" style="position: fixed; margin-top: 500; margin-left: 650;" onmouseover="display_image('Dog.jpg', 300, 300)" onmouseout="remove_image()">
+
+    </body>
+</html>

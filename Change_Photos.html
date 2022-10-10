@@ -1,0 +1,30 @@
+<!-- Write a javascript program to change photos at specific interval. -->
+
+<html>
+    <head>
+
+        <img src="Deer.png" id="abc" width="700" height="500"> <br><br>
+
+        <h1 id="aa"> Vyomesh Deepakbhai Mistry</h1>
+
+        <script>
+
+            var img = ['Dog.jpg','elephant.jpg','KingFisher.jpg','Homer.png','Horse1.jpg','Leopard.jpg','lion.jpg'];
+
+            var col = ['red','orange','yellow','green','blue','indigo','violet'];
+
+            var i = 0;
+            var j = 0;
+
+            var e = document.getElementById("abc");
+            var t = document.getElementById("aa");
+
+            setInterval("e.src = img[i++%7];",2000);
+            setInterval("t.style.color = col[j++%7];",2000);
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
