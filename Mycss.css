@@ -1,0 +1,37 @@
+h1
+{
+    color:rgb(20, 220,220);
+    font-size: 36pt;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: Verdana;
+    background-color: black;
+    cursor: hand;
+}
+        
+a:hover
+{
+    cursor: crosshair;
+    font-size:20pt;
+    color:coral;
+}
+
+.abc
+{
+    font-size:14pt;
+    text-transform:capitalize;
+    text-indent: 100px;
+    letter-spacing: 10px;
+    cursor:move;
+}
+
+#mytab
+{
+    border-style: dotted; 
+    border-bottom-style: groove;
+    border:10px green;
+    cursor:not-allowed;
+    background-color: darkkhaki;
+    color: white;
+
+}
