@@ -6,28 +6,31 @@
 * Attributes of forms in HTML :-
 
 -> Method attribute: Using HTML a client can send data over the network by two methods :
-							1) GET
-							2) POST
+						1) GET
+						2) POST
 
 	
 * Difference between "GET" & "POST" :-
 
-		GET													POST
+		GET													
 
--> By default, it is sent by get method.			-> It has to be sent explicitly.
+-> By default, it is sent by get method.			
+-> The data sent through get method will be displayed in the URL.							
+-> Parameters remain in browser history.			
+-> It can be bookmarked.							
+-> It allows ASCII character only.					
+-> Easy to hack data.								
+-> It is less secured.								
 
--> The data sent through get method will 			-> The data sent through post method 
-	be displayed in the URL.							cannot be seen in URL.
+		POST
 
--> Parameters remain in browser history.			-> Parameters are not saved in browser history.
-
--> It can be bookmarked.							-> It cannot be bookmarked.
-
--> It allows ASCII character only.					-> It allows ASCII as well as Binary.
-
--> Easy to hack data.								-> Difficult to hack data.
-
--> It is less secured.								-> It is more (trustfull)secured.
+-> It has to be sent explicitly.	
+-> The data sent through post method cannot be seen in URL.
+-> Parameters are not saved in browser history.
+-> It cannot be bookmarked.
+-> It allows ASCII as well as Binary.
+-> Difficult to hack data.
+-> It is more (trustfull)secured.
 
 
 * When frameset is used in a program body. Tag cannot be used.
@@ -52,8 +55,7 @@
 	3) Reset -> It is used to cancel all the input
 
 
-* p(Paragraph) tag :- It separate the content logically as well as physically. 
-						It also leaves extra line space before and after its content.
+* p(Paragraph) tag :- It separate the content logically as well as physically. It also leaves extra line space before and after its content.
 
 
 * Div tag :- It separate the content logically as well as physically, but doesn't leave extra line.
@@ -74,11 +76,15 @@
 
 * Different between class selector and ID selector :-
 
-		Class										ID
+		Class										
 	
--> It starts with DOT(.).						-> It starts with hash(#).
+-> It starts with DOT(.).						
+-> It can be applied to multiple elements.		
 
--> It can be applied to multiple elements.		-> It can be applied to one element.
+		ID
+
+-> It starts with hash(#).
+-> It can be applied to one element.
 
 
 * Position absolute :- Irrespective of current place, element will be paste exactly given at top and left of the current web page.
@@ -96,37 +102,40 @@
 
 * Difference between Java and javascript :-
 
-			Java								JavaScript
+		Java								
 
--> It is statically type language.			-> It is dynamic.
+-> It is statically type language.			
+-> It is object-oriented language.			
+-> It generates program that run on virtual machine or browser.				
+-> It is strongly typed language.			
+-> It is loaded from compile byte code.		
+-> It is class based.						
 
--> It is object-oriented language.			-> It is object-based language.
+		JavaScript
 
--> It generates program that run 			-> It generates program that run 
-	on virtual machine or browser.				only on browser.
-
--> It is strongly typed language.			-> It is weakly typed language.
-
--> It is loaded from compile byte code.		-> It is loaded from human readable source code.
-
--> It is class based.						-> It is prototype based.
-
+-> It is dynamic.	
+-> It is object-based language.
+-> It generates program that run only on browser.
+-> It is weakly typed language.
+-> It is loaded from human readable source code.
+-> It is prototype based.
 
 * Difference between Client side scripting and Server side scripting.
 
-	Client side scripting							Server side scripting
+	Client side scripting							
 
--> It is a kind of computer program on			-> It is kind of computer program on 
-	the web executed at client side.				the web executed at server side.
+-> It is a kind of computer program on the web executed at client side.				
+-> It is processed by user web browser.			
+-> It can be viewed by user.					
+-> It can generate cookies only.				
+-> It mainly focused on validation and look of the website.
+-> It can use clients file system to store data.
 
--> It is processed by user web browser.			-> It is processed by web server.
-	
--> It can be viewed by user.					-> It cannot be viewed by user.
+	Server side scripting
 
--> It can generate cookies only.				-> It can generate cookies as well as sessions.
-
--> It mainly focused on validation and			-> It mainly focused on computation & queries.
-	look of the website.
-
--> It can use clients file system to 			-> It can use database system to store data.
-	store data.
+-> It is kind of computer program on the web executed at server side.
+-> It is processed by web server.
+-> It cannot be viewed by user.
+-> It can generate cookies as well as sessions.
+-> It mainly focused on computation & queries.
+-> It can use database system to store data.
